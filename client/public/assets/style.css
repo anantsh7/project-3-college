@@ -1,0 +1,1665 @@
+@import url(fonts.css);@import url(fonts.css);
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block
+}
+
+body {
+  line-height: 1
+}
+
+ol,
+ul {
+  list-style: none
+}
+
+blockquote,
+q {
+  quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+* {
+  box-sizing: border-box
+}
+
+body {
+  color: #040404;
+  font-size: font-size(1);
+  font-family: Montserrat, "Helvetica Neue", Helvetica, arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400
+}
+
+button {
+  cursor: pointer
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a {
+  text-decoration: none
+}
+
+strong {
+  font-weight: 700
+}
+
+a img {
+  border: 0;
+  outline: 0
+}
+
+[aria-hidden="true"] {
+  display: none
+}
+
+@media print {
+  * {
+    color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact
+  }
+}
+
+button,
+.button,
+.share,
+.button-share.results-share,
+.school-share,
+.button-outline,
+.data-home-button,
+.button-share,
+input[type="submit"] {
+  -webkit-transition-property: background-color;
+  -moz-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.25s;
+  -moz-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+  border-radius: 500px;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase
+}
+
+.centered,
+figure.meter,
+.section-home-start,
+.section-home-facts,
+.section-home-numbers,
+.section-home-paying,
+.section-home-toolkit,
+.section-home-resources,
+.search_form-submit,
+.school-academics-fact {
+  text-align: center
+}
+
+.test {
+  color: yellow
+}
+
+.u-wrap {
+  max-width: 76.875em;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.u-wrap::after {
+  clear: both;
+  content: "";
+  display: table
+}
+
+.u-nowrap {
+  white-space: nowrap
+}
+
+.container,
+.u-container {
+  max-width: 76.875em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25em;
+  padding-right: 1.25em
+}
+
+.container::after,
+.u-container::after {
+  clear: both;
+  content: "";
+  display: table
+}
+
+@media only screen and (min-width: 48em) {
+
+  .container,
+  .u-container {
+    padding-left: 1.875em;
+    padding-right: 1.875em
+  }
+}
+
+.container-collapse,
+.u-container_collapse {
+  padding-left: 0;
+  padding-right: 0
+}
+
+@media only screen and (min-width: 48em) {
+
+  .container-collapse,
+  .u-container_collapse {
+    padding-left: 1.875em;
+    padding-right: 1.875em
+  }
+}
+
+.hidden,
+.u-hidden {
+  display: none
+}
+
+.sr-only,
+legend,
+.u-sr_only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: px;
+  overflow: hidden
+}
+
+.new_line,
+.u-new_line,
+.section-home-facts li img {
+  display: block
+}
+
+ol.decimal,
+.u-ordered_list {
+  list-style-type: decimal;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 1.25em
+}
+
+ol.decimal li,
+.u-ordered_list li {
+  padding-bottom: .41667em
+}
+
+ol.disc,
+.u-unordered_list {
+  list-style-type: disc;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 1.25em
+}
+
+ol.disc li,
+.u-unordered_list li {
+  padding-bottom: .16667em
+}
+
+ol.disc.second_level,
+.u-unordered_list.second_level {
+  list-style-type: square
+}
+
+.u-unmarked_list {
+  padding: 0
+}
+
+.u-unmarked_list li {
+  list-style: none
+}
+
+.u-inline_list * {
+  display: inline-block
+}
+
+.group_inline,
+.u-group_inline {
+  display: table;
+  width: 100%
+}
+
+.group_inline-left,
+.u-group_inline-left {
+  display: table-cell;
+  padding-right: 8px
+}
+
+.group_inline-right,
+.u-group_inline-right {
+  display: table-cell;
+  vertical-align: middle
+}
+
+.u-hv_center_block {
+  position: relative
+}
+
+.u-hv_center_block-content {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%
+}
+
+.u-h_center_block,
+.school-student-stats-col .school-student-time {
+  margin-left: auto;
+  margin-right: auto
+}
+
+.u-v_center_block {
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: relative;
+  top: 50%
+}
+
+.u-align_l {
+  text-align: left
+}
+
+.u-align_r {
+  text-align: right
+}
+
+.u-align_c {
+  text-align: center
+}
+
+.u-pull {
+  float: left
+}
+
+.u-pullr {
+  float: right
+}
+
+.no-data {
+  color: #666;
+  border: 1px solid #eaeaea;
+  border-radius: 2px;
+  padding: .41667em .83333em !important;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em
+}
+
+.u-lower {
+  margin-bottom: -5em !important
+}
+
+.u-video-wrap {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0
+}
+
+.u-video-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%
+}
+
+body {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, arial, sans-serif
+}
+
+.light_on_dark,
+.link-expand,
+.link-more,
+button.button-add,
+.button.button-add,
+.button-add.share,
+.button-add.school-share,
+.button-add.button-outline,
+.button-add.data-home-button,
+.button-add.button-share,
+input[type="submit"].button-add,
+.pagination ol li.pagination-page_selected a,
+[role="tooltip"] .tooltip-content,
+.investigation-major {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+h1,
+h2,
+h3,
+h4 .h1,
+.h2,
+figure.meter .figure-heading,
+figure.meter figcaption,
+.h3,
+.h4,
+.guide>section>h1,
+.guide-buttons>h1 {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, arial, sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility
+}
+
+h1,
+.h1 {
+  font-size: 15px;
+  font-size: 1.5rem
+}
+
+@media only screen and (min-width: 30em) {
+
+  h1,
+  .h1 {
+    font-size: 17.5px;
+    font-size: 1.75rem
+  }
+}
+
+h2,
+.h2,
+figure.meter .figure-heading,
+figure.meter figcaption {
+  font-size: 13.13px;
+  font-size: 1.313rem
+}
+
+@media only screen and (min-width: 30em) {
+
+  h2,
+  .h2,
+  figure.meter .figure-heading,
+  figure.meter figcaption {
+    font-size: 15px;
+    font-size: 1.5rem
+  }
+}
+
+h3,
+.h3 {
+  font-size: 11.25px;
+  font-size: 1.125rem
+}
+
+h4,
+.h4,
+.guide>section>h1,
+.guide-buttons>h1 {
+  font-size: 10px;
+  font-size: 1rem
+}
+
+button,
+.button,
+.share,
+.button-share.results-share,
+.school-share,
+.button-outline,
+.data-home-button,
+.button-share {
+  font-size: 11.25px;
+  font-size: 1.125rem;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 3.6px
+}
+
+button.button-secondary,
+button.button-compare,
+.button.button-secondary,
+.button-secondary.share,
+.button-secondary.school-share,
+.button-secondary.button-outline,
+.button-secondary.data-home-button,
+.button-secondary.button-share,
+.button.button-compare,
+.button-compare.share,
+.button-compare.school-share,
+.button-compare.button-outline,
+.button-compare.data-home-button,
+.button-compare.button-share {
+  font-size: 7.5px;
+  font-size: .75rem;
+  letter-spacing: 2px
+}
+
+button.button-wizard,
+.button.button-wizard,
+.button-wizard.share,
+.button-wizard.school-share,
+.button-wizard.button-outline,
+.button-wizard.data-home-button,
+.button-wizard.button-share {
+  font-size: 8.75px;
+  font-size: .875rem;
+  letter-spacing: 2px;
+  line-height: 18px
+}
+
+.link-expand,
+.link-more,
+button.button-add,
+.button.button-add,
+.button-add.share,
+.button-add.school-share,
+.button-add.button-outline,
+.button-add.data-home-button,
+.button-add.button-share,
+input[type="submit"].button-add {
+  font-size: 7.5px;
+  font-size: .75rem;
+  color: #2c8511;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase
+}
+
+.link-expand:hover,
+.link-expand:focus,
+.link-more:hover,
+button.button-add:hover,
+.button.button-add:hover,
+.button-add.share:hover,
+.button-add.school-share:hover,
+.button-add.button-outline:hover,
+.button-add.data-home-button:hover,
+.button-add.button-share:hover,
+input[type="submit"].button-add:hover,
+.link-more:focus,
+button.button-add:focus,
+.button.button-add:focus,
+.button-add.share:focus,
+.button-add.school-share:focus,
+.button-add.button-outline:focus,
+.button-add.data-home-button:focus,
+.button-add.button-share:focus,
+input[type="submit"].button-add:focus {
+  color: #216d09
+}
+
+.link-expand i,
+.link-more i,
+button.button-add i,
+.button.button-add i,
+.button-add.share i,
+.button-add.school-share i,
+.button-add.button-outline i,
+.button-add.data-home-button i,
+.button-add.button-share i,
+input[type="submit"].button-add i {
+  font-size: 7px;
+  font-size: .7rem;
+  padding-left: 2px
+}
+
+.title_heading,
+.title h1 {
+  font-size: 15px;
+  font-size: 1.5rem;
+  padding-top: 0.65em
+}
+
+@media only screen and (min-width: 30em) {
+
+  .title_heading,
+  .title h1 {
+    font-size: 22.5px;
+    font-size: 2.25rem
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .large_heading {
+    font-size: 26.25px;
+    font-size: 2.625rem
+  }
+}
+
+.search_category {
+  font-size: 15px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-top: 0.45em
+}
+
+@media only screen and (min-width: 30em) {
+  .search_category {
+    font-size: 17.5px;
+    font-size: 1.75rem
+  }
+}
+
+.key_fact,
+.school-programs {
+  font-size: 11.25px;
+  font-size: 1.125rem;
+  font-weight: 400
+}
+
+.supporting_copy,
+.search_form p {
+  font-size: 8.75px;
+  font-size: .875rem
+}
+
+.nested_fieldset {
+  border-top: none;
+  padding-bottom: .41667em
+}
+
+.nested_fieldset h1 {
+  font-size: 8.75px;
+  font-size: .875rem;
+  font-weight: 700;
+  margin-top: 12px;
+  margin-bottom: 0.5em
+}
+
+.special {
+  background-color: #d3eefb;
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1;
+  margin-right: .41667em;
+  margin-bottom: 0.2em;
+  padding: 0.3em
+}
+
+.fact_number,
+.section-home-facts strong {
+  font-size: 50px;
+  font-size: 5rem;
+  color: #2c8511;
+  display: block;
+  font-weight: 700;
+  line-height: 1
+}
+
+.share,
+.button-share.results-share,
+.school-share {
+  font-size: 7.5px;
+  font-size: .75rem;
+  letter-spacing: 1px;
+  padding: 2px 15px !important;
+  height: auto !important;
+  width: auto !important
+}
+
+aria-accordion {
+  -webkit-transition: height 1s linear;
+  -moz-transition: height 1s linear;
+  transition: height 1s linear;
+  display: block;
+  min-height: 52px;
+  padding-bottom: .41667em
+}
+
+@media only screen and (min-width: 30em) {
+  aria-accordion {
+    min-height: 61px
+  }
+}
+
+aria-accordion [aria-controls] {
+  background: transparent;
+  border-radius: 0;
+  display: block;
+  font: inherit;
+  height: auto;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-align: left;
+  text-transform: none;
+  vertical-align: baseline;
+  width: 100%
+}
+
+aria-accordion [aria-controls]:after {
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 500px;
+  color: #999;
+  display: inline-block;
+  font-size: 34px;
+  font-weight: normal;
+  height: 34px;
+  line-height: 1.075;
+  padding-left: 0.02em;
+  position: absolute;
+  text-align: center;
+  top: 9px;
+  right: 0;
+  width: 34px
+}
+
+aria-accordion [aria-controls]:after {
+  top: -2px
+}
+
+aria-accordion[aria-expanded=true] [aria-controls]:after {
+  content: '\2212'
+}
+
+aria-accordion[aria-expanded=false] [aria-controls]:after {
+  content: '\002B'
+}
+
+aria-accordion [aria-controls]:hover:after {
+  color: #333
+}
+
+aria-accordion [aria-hidden=true] {
+  display: none
+}
+
+aria-accordion .accordion-div {
+  padding-top: .625em
+}
+
+.compat-message {
+  background: #ffe;
+  color: #d44116;
+  padding: 1.25em 0
+}
+
+button,
+.button,
+.share,
+.button-share.results-share,
+.school-share,
+.button-outline,
+.data-home-button,
+.button-share,
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  cursor: pointer;
+  height: 46px;
+  margin-bottom: 0.6em;
+  user-select: none;
+  vertical-align: middle;
+  width: 100%
+}
+
+@media only screen and (min-width: 30em) {
+
+  button,
+  .button,
+  .share,
+  .button-share.results-share,
+  .school-share,
+  .button-outline,
+  .data-home-button,
+  .button-share,
+  input[type="submit"] {
+    width: 280px
+  }
+}
+
+button.button-primary,
+button.share,
+button.button-share.results-share,
+button.school-share,
+button.button-share,
+.button.button-primary,
+.share,
+.button-share.results-share,
+.school-share,
+.button-primary.button-outline,
+.button-primary.data-home-button,
+.button-share,
+input[type="submit"].button-primary,
+input[type="submit"].share,
+input[type="submit"].school-share,
+input[type="submit"].button-share {
+  background-color: #2c8511;
+  color: #fff;
+  height: 55px;
+  width: 100%;
+  -webkit-font-smoothing: antialiased
+}
+
+@media only screen and (min-width: 30em) {
+
+  button.button-primary,
+  button.share,
+  button.button-share.results-share,
+  button.school-share,
+  button.button-share,
+  .button.button-primary,
+  .share,
+  .button-share.results-share,
+  .school-share,
+  .button-primary.button-outline,
+  .button-primary.data-home-button,
+  .button-share,
+  input[type="submit"].button-primary,
+  input[type="submit"].share,
+  input[type="submit"].school-share,
+  input[type="submit"].button-share {
+    width: 300px
+  }
+}
+
+button.button-primary:hover,
+button.share:hover,
+button.school-share:hover,
+button.button-share:hover,
+button.button-primary:focus,
+button.share:focus,
+button.school-share:focus,
+button.button-share:focus,
+.button.button-primary:hover,
+.share:hover,
+.school-share:hover,
+.button-primary.button-outline:hover,
+.button-primary.data-home-button:hover,
+.button-share:hover,
+.button.button-primary:focus,
+.share:focus,
+.school-share:focus,
+.button-primary.button-outline:focus,
+.button-primary.data-home-button:focus,
+.button-share:focus,
+input[type="submit"].button-primary:hover,
+input[type="submit"].share:hover,
+input[type="submit"].school-share:hover,
+input[type="submit"].button-share:hover,
+input[type="submit"].button-primary:focus,
+input[type="submit"].share:focus,
+input[type="submit"].school-share:focus,
+input[type="submit"].button-share:focus {
+  background-color: #216d09;
+  color: #fff
+}
+
+button.button-secondary,
+button.button-compare,
+.button.button-secondary,
+.button-secondary.share,
+.button-secondary.school-share,
+.button-secondary.button-outline,
+.button-secondary.data-home-button,
+.button-secondary.button-share,
+.button.button-compare,
+.button-compare.share,
+.button-compare.school-share,
+.button-compare.button-outline,
+.button-compare.data-home-button,
+.button-compare.button-share,
+input[type="submit"].button-secondary,
+input[type="submit"].button-compare {
+  height: 40px
+}
+
+button.button-secondary,
+.button.button-secondary,
+.button-secondary.share,
+.button-secondary.school-share,
+.button-secondary.button-outline,
+.button-secondary.data-home-button,
+.button-secondary.button-share,
+input[type="submit"].button-secondary {
+  background-color: #f0d704;
+  color: #040404
+}
+
+button.button-secondary:hover,
+button.button-secondary:focus,
+.button.button-secondary:hover,
+.button-secondary.share:hover,
+.button-secondary.school-share:hover,
+.button-secondary.button-outline:hover,
+.button-secondary.data-home-button:hover,
+.button-secondary.button-share:hover,
+.button.button-secondary:focus,
+.button-secondary.share:focus,
+.button-secondary.school-share:focus,
+.button-secondary.button-outline:focus,
+.button-secondary.data-home-button:focus,
+.button-secondary.button-share:focus,
+input[type="submit"].button-secondary:hover,
+input[type="submit"].button-secondary:focus {
+  background-color: #eeba28;
+  color: #040404
+}
+
+button.button-compare,
+.button.button-compare,
+.button-compare.share,
+.button-compare.school-share,
+.button-compare.button-outline,
+.button-compare.data-home-button,
+.button-compare.button-share,
+input[type="submit"].button-compare {
+  background-color: #2c8511;
+  border-radius: 2px;
+  color: #fff;
+  -webkit-font-smoothing: antialiased
+}
+
+button.button-compare:hover,
+button.button-compare:focus,
+.button.button-compare:hover,
+.button-compare.share:hover,
+.button-compare.school-share:hover,
+.button-compare.button-outline:hover,
+.button-compare.data-home-button:hover,
+.button-compare.button-share:hover,
+.button.button-compare:focus,
+.button-compare.share:focus,
+.button-compare.school-share:focus,
+.button-compare.button-outline:focus,
+.button-compare.data-home-button:focus,
+.button-compare.button-share:focus,
+input[type="submit"].button-compare:hover,
+input[type="submit"].button-compare:focus {
+  background-color: #216d09;
+  color: #fff
+}
+
+button.button-wizard,
+.button.button-wizard,
+.button-wizard.share,
+.button-wizard.school-share,
+.button-wizard.button-outline,
+.button-wizard.data-home-button,
+.button-wizard.button-share,
+input[type="submit"].button-wizard {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  height: 76px;
+  padding-top: 0.9em;
+  padding-bottom: 0.8em;
+  -webkit-font-smoothing: antialiased
+}
+
+button.button-wizard:hover,
+button.button-wizard:focus,
+.button.button-wizard:hover,
+.button-wizard.share:hover,
+.button-wizard.school-share:hover,
+.button-wizard.button-outline:hover,
+.button-wizard.data-home-button:hover,
+.button-wizard.button-share:hover,
+.button.button-wizard:focus,
+.button-wizard.share:focus,
+.button-wizard.school-share:focus,
+.button-wizard.button-outline:focus,
+.button-wizard.data-home-button:focus,
+.button-wizard.button-share:focus,
+input[type="submit"].button-wizard:hover,
+input[type="submit"].button-wizard:focus {
+  box-shadow: 0 0 0 2px #fff
+}
+
+button.button-add,
+button.button-remove,
+.button.button-add,
+.button-add.share,
+.button-add.school-share,
+.button-add.button-outline,
+.button-add.data-home-button,
+.button-add.button-share,
+.button.button-remove,
+.button-remove.share,
+.button-remove.school-share,
+.button-remove.button-outline,
+.button-remove.data-home-button,
+.button-remove.button-share,
+input[type="submit"].button-add,
+input[type="submit"].button-remove {
+  white-space: normal;
+  letter-spacing: 0;
+  width: auto;
+  min-width: 50px
+}
+
+button.button-add,
+.button.button-add,
+.button-add.share,
+.button-add.school-share,
+.button-add.button-outline,
+.button-add.data-home-button,
+.button-add.button-share,
+input[type="submit"].button-add {
+  background-color: #fff;
+  border-radius: 0;
+  color: #2c8511;
+  padding-right: 0;
+  padding-left: 0;
+  line-height: 1
+}
+
+button.button-add:hover,
+button.button-add:focus,
+.button.button-add:hover,
+.button-add.share:hover,
+.button-add.school-share:hover,
+.button-add.button-outline:hover,
+.button-add.data-home-button:hover,
+.button-add.button-share:hover,
+.button.button-add:focus,
+.button-add.share:focus,
+.button-add.school-share:focus,
+.button-add.button-outline:focus,
+.button-add.data-home-button:focus,
+.button-add.button-share:focus,
+input[type="submit"].button-add:hover,
+input[type="submit"].button-add:focus {
+  background-color: #fff;
+  color: #216d09
+}
+
+button.button-remove,
+.button.button-remove,
+.button-remove.share,
+.button-remove.school-share,
+.button-remove.button-outline,
+.button-remove.data-home-button,
+.button-remove.button-share,
+input[type="submit"].button-remove {
+  font-size: 17.5px;
+  font-size: 1.75rem;
+  background-color: #fff;
+  color: #999;
+  line-height: 1
+}
+
+button.button-remove:hover,
+button.button-remove:focus,
+.button.button-remove:hover,
+.button-remove.share:hover,
+.button-remove.school-share:hover,
+.button-remove.button-outline:hover,
+.button-remove.data-home-button:hover,
+.button-remove.button-share:hover,
+.button.button-remove:focus,
+.button-remove.share:focus,
+.button-remove.school-share:focus,
+.button-remove.button-outline:focus,
+.button-remove.data-home-button:focus,
+.button-remove.button-share:focus,
+input[type="submit"].button-remove:hover,
+input[type="submit"].button-remove:focus {
+  background-color: #fff;
+  color: #216d09
+}
+
+button.button-compare_schools,
+.button.button-compare_schools,
+.button-compare_schools.share,
+.button-compare_schools.school-share,
+.button-compare_schools.button-outline,
+.button-compare_schools.data-home-button,
+.button-compare_schools.button-share,
+input[type="submit"].button-compare_schools {
+  font-size: 17.5px;
+  font-size: 1.75rem;
+  background-color: #fff;
+  color: #999;
+  letter-spacing: 0;
+  line-height: 1;
+  white-space: normal;
+  width: 40px;
+  position: relative;
+  -webkit-tap-highlight-color: transparent
+}
+
+button.button-compare_schools[aria-pressed="true"],
+.button.button-compare_schools[aria-pressed="true"],
+.button-compare_schools[aria-pressed="true"].share,
+.button-compare_schools[aria-pressed="true"].school-share,
+.button-compare_schools[aria-pressed="true"].button-outline,
+.button-compare_schools[aria-pressed="true"].data-home-button,
+.button-compare_schools[aria-pressed="true"].button-share,
+input[type="submit"].button-compare_schools[aria-pressed="true"] {
+  color: #eeba28
+}
+
+button.button-compare_schools[aria-describedby="tip-compare-max"],
+.button.button-compare_schools[aria-describedby="tip-compare-max"],
+.button-compare_schools[aria-describedby="tip-compare-max"].share,
+.button-compare_schools[aria-describedby="tip-compare-max"].school-share,
+.button-compare_schools[aria-describedby="tip-compare-max"].button-outline,
+.button-compare_schools[aria-describedby="tip-compare-max"].data-home-button,
+.button-compare_schools[aria-describedby="tip-compare-max"].button-share,
+input[type="submit"].button-compare_schools[aria-describedby="tip-compare-max"] {
+  cursor: not-allowed !important
+}
+
+button.button-compare_schools[aria-describedby="tip-compare-max"] .fa,
+.button.button-compare_schools[aria-describedby="tip-compare-max"] .fa,
+.button-compare_schools[aria-describedby="tip-compare-max"].share .fa,
+.button-compare_schools[aria-describedby="tip-compare-max"].school-share .fa,
+.button-compare_schools[aria-describedby="tip-compare-max"].button-outline .fa,
+.button-compare_schools[aria-describedby="tip-compare-max"].data-home-button .fa,
+.button-compare_schools[aria-describedby="tip-compare-max"].button-share .fa,
+input[type="submit"].button-compare_schools[aria-describedby="tip-compare-max"] .fa {
+  cursor: not-allowed !important
+}
+
+button.button-compare_schools[aria-describedby="tip-compare-add"],
+.button.button-compare_schools[aria-describedby="tip-compare-add"],
+.button-compare_schools[aria-describedby="tip-compare-add"].share,
+.button-compare_schools[aria-describedby="tip-compare-add"].school-share,
+.button-compare_schools[aria-describedby="tip-compare-add"].button-outline,
+.button-compare_schools[aria-describedby="tip-compare-add"].data-home-button,
+.button-compare_schools[aria-describedby="tip-compare-add"].button-share,
+input[type="submit"].button-compare_schools[aria-describedby="tip-compare-add"] {
+  cursor: pointer
+}
+
+button.button-compare_schools[aria-describedby="tip-compare-add"] .fa,
+.button.button-compare_schools[aria-describedby="tip-compare-add"] .fa,
+.button-compare_schools[aria-describedby="tip-compare-add"].share .fa,
+.button-compare_schools[aria-describedby="tip-compare-add"].school-share .fa,
+.button-compare_schools[aria-describedby="tip-compare-add"].button-outline .fa,
+.button-compare_schools[aria-describedby="tip-compare-add"].data-home-button .fa,
+.button-compare_schools[aria-describedby="tip-compare-add"].button-share .fa,
+input[type="submit"].button-compare_schools[aria-describedby="tip-compare-add"] .fa {
+  cursor: pointer
+}
+
+button.button-compare_schools[aria-describedby^="tip-"]:hover i,
+button.button-compare_schools[aria-describedby^="tip-"]:focus i,
+.button.button-compare_schools[aria-describedby^="tip-"]:hover i,
+.button-compare_schools[aria-describedby^="tip-"].share:hover i,
+.button-compare_schools[aria-describedby^="tip-"].school-share:hover i,
+.button-compare_schools[aria-describedby^="tip-"].button-outline:hover i,
+.button-compare_schools[aria-describedby^="tip-"].data-home-button:hover i,
+.button-compare_schools[aria-describedby^="tip-"].button-share:hover i,
+.button.button-compare_schools[aria-describedby^="tip-"]:focus i,
+.button-compare_schools[aria-describedby^="tip-"].share:focus i,
+.button-compare_schools[aria-describedby^="tip-"].school-share:focus i,
+.button-compare_schools[aria-describedby^="tip-"].button-outline:focus i,
+.button-compare_schools[aria-describedby^="tip-"].data-home-button:focus i,
+.button-compare_schools[aria-describedby^="tip-"].button-share:focus i,
+input[type="submit"].button-compare_schools[aria-describedby^="tip-"]:hover i,
+input[type="submit"].button-compare_schools[aria-describedby^="tip-"]:focus i {
+  color: inherit !important
+}
+
+button.button-compare_schools .fa,
+.button.button-compare_schools .fa,
+.button-compare_schools.share .fa,
+.button-compare_schools.school-share .fa,
+.button-compare_schools.button-outline .fa,
+.button-compare_schools.data-home-button .fa,
+.button-compare_schools.button-share .fa,
+input[type="submit"].button-compare_schools .fa {
+  z-index: 100
+}
+
+button.button-compare_schools .fa.tooltip-target>[role="tooltip"],
+.button.button-compare_schools .fa.tooltip-target>[role="tooltip"],
+.button-compare_schools.share .fa.tooltip-target>[role="tooltip"],
+.button-compare_schools.school-share .fa.tooltip-target>[role="tooltip"],
+.button-compare_schools.button-outline .fa.tooltip-target>[role="tooltip"],
+.button-compare_schools.data-home-button .fa.tooltip-target>[role="tooltip"],
+.button-compare_schools.button-share .fa.tooltip-target>[role="tooltip"],
+input[type="submit"].button-compare_schools .fa.tooltip-target>[role="tooltip"] {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, arial, sans-serif !important
+}
+
+button _:-ms-fullscreen,
+:root button.button-compare_schools,
+.button _:-ms-fullscreen,
+.share _:-ms-fullscreen,
+.school-share _:-ms-fullscreen,
+.button-outline _:-ms-fullscreen,
+.data-home-button _:-ms-fullscreen,
+.button-share _:-ms-fullscreen,
+:root .button.button-compare_schools,
+:root .button-compare_schools.share,
+:root .button-compare_schools.school-share,
+:root .button-compare_schools.button-outline,
+:root .button-compare_schools.data-home-button,
+:root .button-compare_schools.button-share,
+input[type="submit"] _:-ms-fullscreen,
+:root input[type="submit"].button-compare_schools {
+  margin-right: 10px;
+  position: inherit
+}
+
+button _:-ms-fullscreen .fa,
+:root button.button-compare_schools .fa,
+.button _:-ms-fullscreen .fa,
+.share _:-ms-fullscreen .fa,
+.school-share _:-ms-fullscreen .fa,
+.button-outline _:-ms-fullscreen .fa,
+.data-home-button _:-ms-fullscreen .fa,
+.button-share _:-ms-fullscreen .fa,
+:root .button.button-compare_schools .fa,
+:root .button-compare_schools.share .fa,
+:root .button-compare_schools.school-share .fa,
+:root .button-compare_schools.button-outline .fa,
+:root .button-compare_schools.data-home-button .fa,
+:root .button-compare_schools.button-share .fa,
+input[type="submit"] _:-ms-fullscreen .fa,
+:root input[type="submit"].button-compare_schools .fa {
+  margin-top: -20px;
+  position: absolute
+}
+
+.content-box {
+  flex: 1 0 auto;
+  padding: 1em;
+  border-radius: 0.4em;
+  background-color: #fff !important
+}
+
+.investigation-major-wrapper {
+  background-color: #d44116;
+  margin-bottom: 1.25em;
+  margin-left: -1.25em;
+  position: relative;
+  width: 98%
+}
+
+.investigation-major-wrapper::after {
+  border: 16px solid #d44116;
+  border-right-color: transparent;
+  border-left-width: 8px;
+  border-radius: 2px;
+  content: "";
+  display: block;
+  position: absolute;
+  right: -18px;
+  top: 0
+}
+
+.school-heading .investigation-major {
+  padding-left: 1.875em
+}
+
+.school-heading .investigation-major-wrapper {
+  margin-left: -1.875em
+}
+
+.results-card-headings {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  min-height: 160px;
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 1.25em
+}
+
+.results-card-headings:last-child {
+  margin-right: 0
+}
+
+.results-card-headings .compare-wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-lines: single;
+  -moz-box-lines: single;
+  box-lines: single;
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  flex: 1 0 auto
+}
+
+.results-card-headings .compare-wrapper h1 {
+  width: 85%
+}
+
+.compare-wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-lines: single;
+  -moz-box-lines: single;
+  box-lines: single;
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  flex: 1 0 auto
+}
+
+.results-card-headings .compare-wrapper h1 {
+  width: 85%
+}
+
+.compare-wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-lines: single;
+  -moz-box-lines: single;
+  box-lines: single;
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  flex: 1 0 auto
+}
+
+.school-section .school-heading .compare-wrapper h1 {
+  width: 85%
+}
+
+.compare-schools {
+  max-width: 76.875em;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.compare-schools::after {
+  clear: both;
+  content: "";
+  display: table
+}
+
+@media only screen and (max-width: 48em) {
+  .compare-schools>.container {
+    padding-left: 0;
+    padding-right: 0
+  }
+}
+
+.compare-schools .compare-main-alert .show-error,
+.compare-schools .compare-main-alert .show-loading {
+  background-color: #fff;
+  padding: 3.125em;
+  border-radius: 0.4em
+}
+
+@media only screen and (min-width: 61.875em) {
+
+  .compare-schools .compare-main-alert .show-error,
+  .compare-schools .compare-main-alert .show-loading {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto
+  }
+}
+
+.compare-schools .schools-compare_selected-list {
+  background-color: #fff;
+  padding: 1.25em;
+  border-radius: 0.4em
+}
+
+@media only screen and (min-width: 61.875em) {
+  .compare-schools .schools-compare_selected-list {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3.125em
+  }
+}
+
+.compare-schools .button-share {
+  font-size: 8.5px;
+  font-size: .85rem;
+  height: 25px !important
+}
+
+.compare-schools .legend-wrapper {
+  position: relative;
+  margin-bottom: 3.125em;
+  margin-right: 0;
+  float: none
+}
+
+.compare-schools [data-bind="school_section"][data-school-id] {
+  cursor: pointer
+}
+
+.sr-only,
+legend,
+.u-sr_only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: px;
+  overflow: hidden
+}
+
+.results-main-schools .school-info {
+  font-weight: 400;
+  margin-bottom: .41667em
+}
+
+.school-meters {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-right: 0
+}
+
+.results-main-schools .school-meters:last-child {
+  margin-right: 0
+}
+
+.results-main-schools .school-meters figure.meter {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%
+}
+
+.results-main-schools .school-meters figure.meter:last-child {
+  margin-right: 0
+}
+
+.results-main-schools .school-meters figure.meter:nth-child(3n) {
+  margin-right: 0
+}
+
+.results-main-schools .school-meters figure.meter:nth-child(3n+1) {
+  clear: left
+}
+
+.results-main-schools .school-meters figure.meter figcaption {
+  font-size: 9px;
+  font-size: .9rem
+}
+
+.results-main-schools .school-meters figure.meter h2.figure-heading {
+  font-size: 7px;
+  font-size: .7rem
+}
+
+.results-main-schools .school-meters figure.meter h2.figure-heading.constrain_width {
+  margin-left: -5%;
+  width: 110%
+}
+
+.results-main-schools .school-meters figure.meter picc-meter {
+  height: 120px;
+  width: 90%;
+  z-index: 100
+}
+
+.results-main-schools .school-meters figure.meter picc-meter .label {
+  display: none
+}
+
+.picc-meter-bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0%;
+  transition: height .5s;
+  background-color: #999
+}
+
+picc-meter .picc-meter-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: bottom .5s
+}
+
+picc-meter .picc-meter-line .label {
+  height: 1em;
+  left: 100%;
+  line-height: 1em;
+  position: absolute;
+  margin: -.4em 0 0 8px;
+  background-color: #ffffff
+}
+
+picc-meter.cost .picc-meter-bar {
+  background-color: #77b713
+}
+
+picc-meter.cost.above_average .picc-meter-line:after {
+  background-color: #ddedc4
+}
+
+picc-meter.graduation .picc-meter-bar {
+  background-color: #8c57f6
+}
+
+picc-meter.graduation.above_average .picc-meter-line:after {
+  background-color: #e2d5fd
+}
+
+picc-meter.earnings .picc-meter-bar {
+  background-color: #00adf2
+}
+
+picc-meter.earnings.above_average .picc-meter-line:after {
+  background-color: #bfebfc
+}
+
+picc-meter.acceptance .picc-meter-bar {
+  background-color: #13b79e
+}
+
+picc-meter.acceptance.above_average .picc-meter-line:after {
+  background-color: #c4ede7
+}
+
+picc-meter.retention .picc-meter-bar {
+  background-color: #9384e9
+}
+
+picc-meter.retention.above_average .picc-meter-line:after {
+  background-color: #e4e0fa
+}
+
+picc-meter.debt .picc-meter-bar {
+  background-color: #9384e9
+}
+
+picc-meter.debt.above_average .picc-meter-line:after {
+  background-color: #e4e0fa
+}
+
+picc-meter.demographics .picc-meter-bar {
+  background-color: #77b713
+}
+
+a.link {
+  color: green; 
+  text-align: center;
+
+}
