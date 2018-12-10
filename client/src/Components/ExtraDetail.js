@@ -6,15 +6,24 @@ import API from "../utils/API";
 import { Redirect } from "react-router-dom";
 
 var divStyle = {
-    width: "50%",
-    left: "0"
+  width: "50%",
+  left: "0",
+}
+
+var bgColors = {
+  "Default": "#81b71a",
+  "Blue": "#00B1E1",
+  "Cyan": "#35aedc",
+  "Green": "#8CC152",
+  "Red": "#E9573F",
+  "Yellow": "#F6BB42",
 }
 
 class ExtraDetail extends Component {
   constructor() {
     super();
   }
-  
+
   state = {
     data: [],
   }
@@ -60,22 +69,22 @@ class ExtraDetail extends Component {
               </div>
               <div>
                 <h2>Academic Info:</h2>
-                <div style={divStyle}>
-                <h3>SAT Scores: </h3>
-                <ul> <h4>25th Percentile Scores</h4>
-                  <li>Critical Reading: {res.latest.admissions.sat_scores["25th_percentile"].critical_reading}</li>
-                  <li>Math: {res.latest.admissions.sat_scores["25th_percentile"].math}</li>
-                  <li>Writing: {res.latest.admissions.sat_scores["25th_percentile"].writing}</li>
-                </ul>
-                <ul> <h4>75th Percentile Scores</h4>
-                  <li>Critical Reading: {res.latest.admissions.sat_scores["75th_percentile"].critical_reading}</li>
-                  <li>Math: {res.latest.admissions.sat_scores["75th_percentile"].math}</li>
-                  <li>Writing: {res.latest.admissions.sat_scores["75th_percentile"].writing}</li>
-                </ul>
+                <div style={divStyle} style={{backgroundColor: bgColors.Red}}>
+                  <h3>SAT Scores: </h3>
+                  <ul> <h4>25th Percentile Scores</h4>
+                    <li>Critical Reading: {res.latest.admissions.sat_scores["25th_percentile"].critical_reading}</li>
+                    <li>Math: {res.latest.admissions.sat_scores["25th_percentile"].math}</li>
+                    <li>Writing: {res.latest.admissions.sat_scores["25th_percentile"].writing}</li>
+                  </ul>
+                  <ul> <h4>75th Percentile Scores</h4>
+                    <li>Critical Reading: {res.latest.admissions.sat_scores["75th_percentile"].critical_reading}</li>
+                    <li>Math: {res.latest.admissions.sat_scores["75th_percentile"].math}</li>
+                    <li>Writing: {res.latest.admissions.sat_scores["75th_percentile"].writing}</li>
+                  </ul>
                 </div>
               </div>
-              <div style={divStyle}>
-              <h3>ACT Scores: </h3>
+              <div style={divStyle} style={{backgroundColor: bgColors.Cyan}}>
+                <h3>ACT Scores: </h3>
                 <ul> <h4>25th Percentile Scores</h4>
                   <li>English: {res.latest.admissions.act_scores["25th_percentile"].english}</li>
                   <li>Math: {res.latest.admissions.act_scores["25th_percentile"].math}</li>
