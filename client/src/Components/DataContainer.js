@@ -52,7 +52,7 @@ class DataContainer extends Component {
       <Container>
         <Row>
           <Col size="md-12">
-            <Card heading="Search">
+            <Card heading="Search for a college to receive more info!">
               <SearchForm
                 value={this.state.search}
                 handleInputChange={this.handleInputChange}

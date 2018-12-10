@@ -17,13 +17,8 @@ const CollegeDetail = props => (
       <div className="results-card-headings">
         <div>
           <Link className="link" to={'/school/' + props.name}>{props.name}</Link>
-          <div className="compare-school">
-            <button type="button" className="button button-compare_schools" data-bind="selected_school" aria-label="Add to Compare" data-school="compare-schools" aria-pressed="mixed" data-school-id="196255" data-school-name={props.name} aria-describedby="tip-compare-add">
-              <i className="fa fa-star tooltip-target"></i>
-              <span className="sr-only">Add to Compare</span>
-            </button>
-          </div>
         </div>
+        <br></br>
         <ul className="school-info">
           <li className="location">
             <span data-bind="city">{props.city}</span>,
@@ -35,6 +30,10 @@ const CollegeDetail = props => (
         </ul>
       </div>
       <Link className="link" to={'/school/' + props.name}>View More Details</Link>
+      <h6>Login required to view more details</h6>
+      <Link className="link" to="/login">Login</Link>
+      <br></br>
+      <Link className="link" to="/signup">Signup</Link>
     </div>
   </div>
 );

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Redirect } from "react-router-dom";
+import { Redirect, Link } from "react-router-dom";
 import API from "../utils/API";
 
 class Login extends Component {
@@ -11,11 +11,11 @@ class Login extends Component {
       message: ""
     }
   }
-  
+
   handleInputChange = e => {
     const { name, value } = e.target;
     this.setState({
-      [name] : value
+      [name]: value
     })
   }
 
@@ -29,9 +29,9 @@ class Login extends Component {
         this.setState({ success: res.data })
 
       })
-      .catch(error => { 
+      .catch(error => {
         console.log(error)
-        this.setState({error});
+        this.setState({ error });
       });
   }
 
@@ -70,6 +70,12 @@ class Login extends Component {
             </div>
 
             <button type="submit" className="btn btn-success" onClick={this.register}>Sign Up!</button>
+
+            <div>
+              <br></br>
+              <h5>Already signed up?</h5>
+              <Link className="link" to="/login">Login</Link>
+            </div>
           </form>
         </div>
         <div>

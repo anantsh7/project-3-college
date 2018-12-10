@@ -11,10 +11,7 @@ var divStyle = {
 }
 
 class ExtraDetail extends Component {
-  constructor() {
-    super();
-  }
-
+  
   state = {
     data: [],
   }
@@ -43,7 +40,7 @@ class ExtraDetail extends Component {
 
   render() {
     console.log(sessionStorage.getItem("isAuthenticated"))
-    if (sessionStorage.getItem("isAuthenticated") != 1) {
+    if (sessionStorage.getItem("isAuthenticated") !== 1) {
       return <Redirect to="/login" />
     }
     return (
